@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cub-ng9-demo1';
+
+  doSearch(keyword: string) {
+    console.dir(keyword);
+  }
+
 }
