@@ -10,6 +10,17 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getData() {
-    return this.http.get('/api/articles.json');
+    return this.http.get<Post[]>('/api/articles.json');
   }
+}
+
+export interface Post {
+  id: number;
+  href: string;
+  title: string;
+  date: string;
+  author: string;
+  category: string;
+  'category-link': string;
+  summary: string;
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DataService } from './data.service';
+import { DataService, Post } from './data.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { DataService } from './data.service';
 })
 export class AppComponent {
   title = 'cub-ng9-demo1';
-  data;
+  data: Post[];
 
   constructor(private datasvc: DataService) { }
 
