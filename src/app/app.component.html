@@ -9,6 +9,10 @@
     <section class="col-md-8 content-wrapper">
       <div id="ctl00_cphBody_divError"></div>
       <div id="ctl00_cphBody_PostList1_posts" class="posts">
+
+        <p-chart type="bar" [data]="chart_data"></p-chart>
+
+
         <!-- Article START-->
         <article class="post" id="post0"
           *ngFor="let item of data$|async; let i=index">
