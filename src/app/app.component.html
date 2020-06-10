@@ -1,7 +1,7 @@
 
 <app-header></app-header>
 
-<pre *ngIf="false">{{ data | json }}</pre>
+<pre *ngIf="false">{{ data$ | async | json }}</pre>
 
 <!-- CONTAINER START-->
 <section class="container">
