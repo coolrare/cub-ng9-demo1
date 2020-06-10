@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   title = 'cub-ng9-demo1';
   data$: Observable<Post[]>;
 
-  chart_data = {
+  chartData = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [
         {
