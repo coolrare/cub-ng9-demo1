@@ -8,12 +8,14 @@ import { HeaderComponent } from './header/header.component';
 import { MaskPipe } from './mask.pipe';
 
 import {ChartModule} from 'primeng/chart';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MaskPipe
+    MaskPipe,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
