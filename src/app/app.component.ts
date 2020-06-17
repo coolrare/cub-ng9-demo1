@@ -39,4 +39,8 @@ export class AppComponent implements OnInit {
     console.dir(keyword);
   }
 
+  doDelete(id) {
+    console.log('DELETE ' + id);
+  }
+
 }
